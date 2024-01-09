@@ -1,2 +1,2 @@
-console.log(">> Ready :)");
+const r=document.querySelector(".js-list"),i=document.querySelector(".js-btn"),o=document.querySelector(".js-game");function c(e){return Math.ceil(Math.random()*e)}const a=()=>{const e=c(9);let t;return e<=3?t="piedra":e>=7?t="papel":t="tijera",t},n=a(),s=()=>{const e=r.value;e===n?o.textContent="Empate":e==="piedra"&&n==="tijera"||e==="papel"&&n==="piedra"||e==="tijera"&&n==="papel"?o.textContent="¡Has Ganado!":o.textContent="¡Has Perdido!"};function l(e){e.preventDefault(),a(),s()}i.addEventListener("click",l);
 //# sourceMappingURL=main.js.map
